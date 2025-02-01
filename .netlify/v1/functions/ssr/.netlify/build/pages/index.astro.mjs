@@ -38,7 +38,13 @@ const $$CustomButton = createComponent(($$result, $$props, $$slots) => {
 }, "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/components/CustomButton.astro", undefined);
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Boda" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Card", $$Card, {})} ${maybeRenderHead()}<img src="../carta.jpg" alt="Fondo" class="absolute inset-x-0 w-full h-full object-cover z-0"> <div class="relative flex-col justify-center text-center"> <div class="py-10 items-center"> <h3 class="uppercase py-2 font-bold">Te invitamos</h3> <h3 class="uppercase pe-2 font-bold">cordialmente a</h3> </div> <div class="gallery flex-col py-8"> <h1 class="py-2 uppercase text-5xl flex-initial">Nuestra</h1> <h1 class="py-2 uppercase text-5xl flex-col-reverse">Boda</h1> </div> <div class="gallery form relative text-center"> <!-- Texto 1 --> <h2 class="py-4 text-5xl text-gray-600 relative z-10">Lizbeth Zapata</h2> <!-- Símbolo & (atrás) --> <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl text-mi-coffe z-0">
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Boda" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Card", $$Card, {})} ${maybeRenderHead()}<img src="../carta.jpg" alt="Fondo" class="absolute inset-x-0 w-full h-full object-cover z-0"> <div class="relative flex-col justify-center text-center"> <div class="py-10 items-center"> <h3 class="uppercase py-2 font-bold">
+Los momentos más felices de la vida son aquellos que compartimos con las
+        personas que amamos.
+</h3> <h3 class="uppercase pe-2 font-bold">
+Nos encantaría que nos acompañes en el inicio de esta nueva aventura
+        juntos.
+</h3> </div> <div class="gallery flex-col py-8"> <h1 class="py-2 uppercase text-5xl flex-initial">Nuestra</h1> <h1 class="py-2 uppercase text-5xl flex-col-reverse">Boda</h1> </div> <div class="gallery form relative text-center"> <!-- Texto 1 --> <h2 class="py-4 text-5xl text-gray-600 relative z-10">Lizbeth Zapata</h2> <!-- Símbolo & (atrás) --> <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl text-mi-coffe z-0">
 &
 </h2> <!-- Texto 2 --> <h2 class="py-4 text-5xl text-gray-600 relative z-10">
 Fernando Villareal
