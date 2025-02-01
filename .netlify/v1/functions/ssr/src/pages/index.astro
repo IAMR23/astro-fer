@@ -1,0 +1,135 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Temporizer from "../components/Temporizer.astro";
+import Card from "../components/Card.astro";
+import CustomButton from "../components/CustomButton.astro";
+---
+
+<Layout title="Boda">
+  <Card />
+
+  <img
+    src="../carta.jpg"
+    alt="Fondo"
+    class="absolute inset-x-0 w-full h-full object-cover z-0"
+  />
+
+  <div class="relative flex-col justify-center text-center">
+    <div class="py-10 items-center">
+      <h3 class="uppercase py-2 font-bold">Te invitamos</h3>
+      <h3 class="uppercase pe-2 font-bold">cordialmente a</h3>
+    </div>
+    <div class="gallery flex-col py-8">
+      <h1 class="py-2 uppercase text-5xl flex-initial">Nuestra</h1>
+      <h1 class="py-2 uppercase text-5xl flex-col-reverse">Boda</h1>
+    </div>
+
+    <div class="gallery form relative text-center">
+      <!-- Texto 1 -->
+      <h2 class="py-4 text-5xl text-gray-600 relative z-10">Lizbeth Zapata</h2>
+
+      <!-- Símbolo & (atrás) -->
+      <h2
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl text-mi-coffe z-0"
+      >
+        &
+      </h2>
+
+      <!-- Texto 2 -->
+      <h2 class="py-4 text-5xl text-gray-600 relative z-10">
+        Fernando Villareal
+      </h2>
+    </div>
+  </div>
+  <!-- Fecha -->
+
+  <div
+    class="footer relative flex justify-between items-center w-full px-4 py-10"
+  >
+    <!-- Día (Sabado) -->
+    <h3 class="flex-1 text-center">Sábado</h3>
+
+    <!-- Línea vertical -->
+    <div class="w-[2px] bg-black h-[60px] mx-4"></div>
+
+    <!-- Fecha (FEB 5 2025) -->
+    <div class="flex-1 flex flex-col justify-center items-center text-center">
+      <h3>MARZO</h3>
+      <h3 class="text-mi-coffe text-5xl">22</h3>
+      <h3>2025</h3>
+    </div>
+
+    <!-- Línea vertical -->
+    <div class="w-[2px] bg-black h-[60px] mx-4"></div>
+
+    <!-- Hora (6:00 pm) -->
+    <h3 class="flex-1 text-center">04:30pm</h3>
+  </div>
+
+  <div
+    class="dressCode relative flex flex-col justify-center items-center text-center pt-12"
+  >
+    <img
+      src="./copas.png"
+      alt="copas"
+      width="32px"
+      height="32px"
+      class="pt-4"
+    />
+    <h2 class="text-4xl">Recepción</h2>
+  </div>
+
+  <div class="dressCode flex flex-col items-center justify-center py-4 gap-4">
+    <CustomButton
+      name1="Ubicación "
+      name2="Recepcion "
+      imagen="/ubicacion.png"
+      link="https://www.google.com/maps/place/Quinta+El+Guabo/@-0.1814147,-78.3959473,17z/data=!3m1!4b1!4m6!3m5!1s0x91d5919cc2f08ac5:0xd042fa4002fa8bc3!8m2!3d-0.1814147!4d-78.3959473!16s%2Fg%2F11b724qsp7?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+    />
+    <CustomButton
+      name1="Confirmar"
+      name2="Asistencia"
+      imagen="/asistencia.png"
+      link="https://moonlit-begonia-f9fbcd.netlify.app/"
+    />
+  </div>
+
+  <div class="dressCode py-10">
+    <div class="flex justify-center items-center">
+      <img src="/vestido.png" alt="" srcset="" width="32" height="32" />
+      <img src="/terno.png" alt="" srcset="" width="32" height="32" />
+    </div>
+    <div class="flex flex-col justify-center items-center text-center">
+      <h2 class="text-4xl">Código de Vestimenta</h2>
+      <h3 class="flex flex-col">
+        <span class="font-bold">Mujeres</span> Vestido (no blanco, no crema, no beige)
+        <span class="font-bold">Hombres</span> Traje Formal (no gris, no plomo)
+      </h3>
+    </div>
+  </div>
+
+  <div class="gallery py-10">
+    <div class="flex flex-col justify-center items-center text-center">
+      <img src="/sobre.png" alt="" srcset="" width="32" height="32" />
+      <h3>
+        Nuestro mejor regalo es que estes con nosotros en nuestro día, pero si
+        quieres hacernos un obsequio ¡Lo puedes hacer!
+      </h3>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center justify-center gap-3 text-center">
+    <h2 class="text-4xl">Faltan</h2>
+    <div class="timer">
+      <Temporizer />
+    </div>
+
+    <div class="cards">
+      <div class="flex justify-center items-center">
+        <img src="/anillo2.png" alt="anillo" width="32px" height="32px" />
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/animation.js"></script>
+</Layout>

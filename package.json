@@ -9,6 +9,7 @@
     "astro": "astro dev"
   },
   "dependencies": {
+    "@astrojs/netlify": "^6.1.0",
     "@astrojs/react": "^4.2.0",
     "@astrojs/tailwind": "^6.0.0",
     "@hotjar/browser": "^1.0.9",
