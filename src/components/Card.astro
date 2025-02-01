@@ -1,0 +1,66 @@
+<div class="container p-4 relative z-10">
+  <h3 class="dressCode text-center text-lg font-bold mb-4">
+    SUBE EL VOLUMEN Y DALE CLICK PARA ESCUCHAR LA CANCIÓN
+  </h3>
+  <div class="image-container flex justify-center">
+    <!-- Imagen para reproducir/pausar -->
+    <img
+      src="/flecha.webp"
+      alt="Play Button"
+      class="temporizer cursor-pointer w-16 h-16 icono-blanco"
+    />
+    <img
+      id="playButton"
+      src="../play.png"
+      alt="Play Button"
+      class="cursor-pointer w-16 h-16"
+    />
+
+    <!-- Elemento de audio (oculto) -->
+    <audio id="miCancion">
+      <source src="/A_Thousand_Years.mp3" type="audio/mp4" />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+</div>
+
+<style>
+  .container {
+    background-color: #b5985c;
+    text-align: center;
+    color: white;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+</style>
+
+<script>
+  const playButton = document.getElementById("playButton");
+  const miCancion = document.getElementById("miCancion") as HTMLAudioElement; // Type casting
+  const icono = playButton?.querySelector("i");
+
+  playButton?.addEventListener("click", () => {
+    if (miCancion.paused) {
+      miCancion.play(); // Reproduce la canción
+      icono?.classList.replace("fa-play", "fa-pause");
+      playButton.innerHTML = '<i class="fas fa-pause"></i> Pausar canción';
+    } else {
+      miCancion.pause(); // Pausa la canción
+      icono?.classList.replace("fa-pause", "fa-play");
+      playButton.innerHTML = '<i class="fas fa-play"></i> Reproducir canción';
+    }
+  });
+</script>
+
+<style>
+  .icono-blanco {
+    filter: brightness(0) invert(1);
+  }
+</style>

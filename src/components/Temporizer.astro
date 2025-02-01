@@ -1,0 +1,44 @@
+<style>
+  .cont-temporizador {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cont-temporizador .bloque {
+    margin: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont-temporizador .bloque p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b5985c;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+  }
+</style>
+<section class="cont-temporizador">
+  <div class="bloque">
+    <p id="days">-</p>
+    <h3 class="font-bold">Dias</h3>
+  </div>
+  <div class="bloque">
+    <p id="hours">-</p>
+    <h3 class="font-bold">Horas</h3>
+  </div>
+  <div class="bloque">
+    <p id="minutes">-</p>
+    <h3 class="font-bold">Minutos</h3>
+  </div>
+  <div class="bloque">
+    <p id="seconds">-</p>
+    <h3 class="font-bold">Segundos</h3>
+  </div>
+</section>
+<script src="../scripts/countdown.js"></script>
