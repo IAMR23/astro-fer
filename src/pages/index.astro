@@ -3,36 +3,31 @@ import Layout from "../layouts/Layout.astro";
 import Temporizer from "../components/Temporizer.astro";
 import Card from "../components/Card.astro";
 import CustomButton from "../components/CustomButton.astro";
+import Pase from "../components/Pase.astro";
 ---
 
 <Layout title="Boda">
   <Card />
 
-  <img
-    src="../carta.jpg"
-    alt="Fondo"
-    class="absolute inset-x-0 w-full h-full object-cover z-0"
-  />
-
-  <div class="relative flex-col justify-center text-center">
-    <div class="py-10 items-center">
-      <h3 class="uppercase py-2 font-bold">
+  <div class="container flex flex-col justify-center items-center text-center">
+    <div class="items-center py-5 romanesco-regular">
+      <h3 class="uppercase font-bold text-sm">
         Los momentos más felices de la vida son aquellos que compartimos con las
         personas que amamos.
       </h3>
-      <h3 class="uppercase pe-2 font-bold">
+      <h3 class="uppercase font-bold text-sm">
         Nos encantaría que nos acompañes en el inicio de esta nueva aventura
         juntos.
       </h3>
     </div>
-    <div class="gallery flex-col py-8">
-      <h1 class="py-2 uppercase text-5xl flex-initial">Nuestra</h1>
-      <h1 class="py-2 uppercase text-5xl flex-col-reverse">Boda</h1>
+    <div class="gallery py-5">
+      <h1 class="boda uppercase text-5xl">Nuestra</h1>
+      <h1 class="boda uppercase text-5xl">Boda</h1>
     </div>
 
-    <div class="gallery form relative text-center">
+    <div class="gallery form text-center py-5">
       <!-- Texto 1 -->
-      <h2 class="py-4 text-5xl text-gray-600 relative z-10">Lizbeth Zapata</h2>
+      <h2 class="py-4 text-5xl text-gray-600 z-10">Lizbeth</h2>
 
       <!-- Símbolo & (atrás) -->
       <h2
@@ -42,9 +37,7 @@ import CustomButton from "../components/CustomButton.astro";
       </h2>
 
       <!-- Texto 2 -->
-      <h2 class="py-4 text-5xl text-gray-600 relative z-10">
-        Fernando Villareal
-      </h2>
+      <h2 class="py-4 text-5xl text-gray-600 z-10">Fernando</h2>
     </div>
   </div>
   <!-- Fecha -->
@@ -69,19 +62,13 @@ import CustomButton from "../components/CustomButton.astro";
     <div class="w-[2px] bg-black h-[60px] mx-4"></div>
 
     <!-- Hora (6:00 pm) -->
-    <h3 class="flex-1 text-center">04:30pm</h3>
+    <h3 class="flex-1 text-center">16:30</h3>
   </div>
 
   <div
     class="dressCode relative flex flex-col justify-center items-center text-center pt-12"
   >
-    <img
-      src="./copas.png"
-      alt="copas"
-      width="32px"
-      height="32px"
-      class="pt-4"
-    />
+    <img src="./copas.png" alt="copas" width="32px" height="32px" />
     <h2 class="text-4xl">Recepción</h2>
   </div>
 
@@ -108,34 +95,57 @@ import CustomButton from "../components/CustomButton.astro";
     <div class="flex flex-col justify-center items-center text-center">
       <h2 class="text-4xl">Código de Vestimenta</h2>
       <h3 class="flex flex-col">
-        <span class="font-bold">Mujeres</span> Vestido (no blanco, no crema, no beige)
-        <span class="font-bold">Hombres</span> Traje Formal (no gris, no plomo)
+        <span class="font-bold text-mi-coffe">Mujeres</span> Vestido (no blanco,
+        no crema, no beige, no rojo)
+        <span class="font-bold text-mi-coffe">Hombres</span> Traje Formal (no gris,
+        no plomo)
       </h3>
     </div>
   </div>
 
   <div class="gallery py-10">
     <div class="flex flex-col justify-center items-center text-center">
-      <img src="/sobre.png" alt="" srcset="" width="32" height="32" />
-      <h3>
+      <img src="/sobre2.png" alt="" srcset="" width="32" height="32" />
+      <h3 class="p-2">
         Nuestro mejor regalo es que estes con nosotros en nuestro día, pero si
-        quieres hacernos un obsequio ¡Lo puedes hacer!
+        quieres hacernos un obsequio ¡Lo puedes hacer en un sobre cerrado!
       </h3>
     </div>
   </div>
 
-  <div class="flex flex-col items-center justify-center gap-3 text-center">
+  <div class="flex flex-col items-center justify-center text-center">
     <h2 class="text-4xl">Faltan</h2>
-    <div class="timer">
+    <div class="timer py-5">
       <Temporizer />
-    </div>
-
-    <div class="cards">
-      <div class="flex justify-center items-center">
-        <img src="/anillo2.png" alt="anillo" width="32px" height="32px" />
-      </div>
     </div>
   </div>
 
-  <script src="../scripts/animation.js"></script>
+  <Pase numPase="3" />
+
+  <div class="image-container flex justify-center" style="display: none">
+    <!-- Elemento de audio (oculto) -->
+    <audio id="miCancion">
+      <source src="/A_Thousand_Years.mp3" type="audio/mp3" />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+
+  <!--   <script src="../scripts/animation.js"></script><script>
+    const miCancion = document.getElementById("miCancion") as HTMLAudioElement;
+
+    // Reproducir la canción cuando el usuario haga clic en la página
+    document.addEventListener("click", () => {
+      miCancion.play();
+    });
+  </script> -->
+  <style>
+    .container {
+      background-image: url("/carta.jpg");
+      background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      width: 100%;
+      height: 70vh;
+    }
+  </style>
 </Layout>
