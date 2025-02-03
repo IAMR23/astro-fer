@@ -11,18 +11,19 @@ import Pase from "../components/Pase.astro";
 
   <div class="container flex flex-col justify-center items-center text-center">
     <div class="items-center py-5 romanesco-regular">
-      <h3 class="uppercase font-bold text-sm">
+      <h3 class="uppercase text-xs">
         Los momentos más felices de la vida son aquellos que compartimos con las
         personas que amamos.
       </h3>
-      <h3 class="uppercase font-bold text-sm">
+      <h3 class="uppercase text-xs">
         Nos encantaría que nos acompañes en el inicio de esta nueva aventura
         juntos.
       </h3>
     </div>
-    <div class="gallery py-5">
+    <div class="gallery py-2">
       <h1 class="boda uppercase text-5xl">Nuestra</h1>
       <h1 class="boda uppercase text-5xl">Boda</h1>
+      <h1 class="boda uppercase text-5xl">Civil</h1>
     </div>
 
     <div class="gallery form text-center py-5 relative">
@@ -53,9 +54,9 @@ import Pase from "../components/Pase.astro";
 
     <!-- Fecha (FEB 5 2025) -->
     <div class="flex-1 flex flex-col justify-center items-center text-center">
-      <h3>MARZO</h3>
-      <h3 class="text-mi-coffe text-5xl">22</h3>
-      <h3>2025</h3>
+      <h3 class="text-xl font-bold">MARZO</h3>
+      <h3 class="text-mi-coffe text-5xl font-bold">22</h3>
+      <h3 class="text-xl font-bold">2025</h3>
     </div>
 
     <!-- Línea vertical -->
@@ -79,6 +80,13 @@ import Pase from "../components/Pase.astro";
       imagen="/ubicacion.png"
       link="https://www.google.com/maps/place/Quinta+El+Guabo/@-0.1814147,-78.3959473,17z/data=!3m1!4b1!4m6!3m5!1s0x91d5919cc2f08ac5:0xd042fa4002fa8bc3!8m2!3d-0.1814147!4d-78.3959473!16s%2Fg%2F11b724qsp7?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
     />
+    <div class="flex flex-col text-center justify-center items-center">
+      <h3 class="text-center">
+        Para nosotros es muy importante contar con tu presencia.
+      </h3>
+      <h3>Por favor confírmanos hasta el  28 de Febréro</h3>
+    </div>
+
     <CustomButton
       name1="Confirmar"
       name2="Asistencia"
@@ -146,6 +154,9 @@ import Pase from "../components/Pase.astro";
       background-repeat: no-repeat; /* Evita que la imagen se repita */
       width: 100%;
       height: 70vh;
+    }
+    .text-xs {
+      font-size: 0.75rem; /* 12 píxeles aproximadamente */
     }
   </style>
 </Layout>
