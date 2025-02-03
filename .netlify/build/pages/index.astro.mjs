@@ -61,7 +61,7 @@ Nuestro mejor regalo es que estes con nosotros en nuestro día, pero si
         quieres hacernos un obsequio ¡Lo puedes hacer en un sobre cerrado!
 </h3> </div> </div> <div class="flex flex-col items-center justify-center text-center" data-astro-cid-j7pv25f6> <h2 class="text-4xl" data-astro-cid-j7pv25f6>Faltan</h2> <div class="timer py-5" data-astro-cid-j7pv25f6> ${renderComponent($$result2, "Temporizer", $$Temporizer, { "data-astro-cid-j7pv25f6": true })} </div> </div> ${renderComponent($$result2, "Pase", $$Pase, { "numPase": "3", "data-astro-cid-j7pv25f6": true })} <div class="image-container flex justify-center" style="display: none" data-astro-cid-j7pv25f6> <!-- Elemento de audio (oculto) --> <audio id="miCancion" data-astro-cid-j7pv25f6> <source src="/A_Thousand_Years.mp3" type="audio/mp3" data-astro-cid-j7pv25f6>
 Tu navegador no soporta el elemento de audio.
-</audio> </div>   ` })}`;
+</audio> </div> ${renderScript($$result2, "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/pages/index.astro?astro&type=script&index=0&lang.ts")}${renderScript($$result2, "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/pages/index.astro?astro&type=script&index=1&lang.ts")}  ` })}`;
 }, "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/pages/index.astro", undefined);
 
 const $$file = "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/pages/index.astro";
