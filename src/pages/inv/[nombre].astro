@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  return [
+    {
+      params: { nombre: "usuario1" },
+      props: { edad: "50" },
+    },
+  ];
+}
+const { edad } = Astro.props;
+---
+
+<Layout title=`Invitacion ${Astro.params.nombre}`>
+  <h1>Hola {edad}</h1>
+</Layout>

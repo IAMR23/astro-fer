@@ -1,30 +1,20 @@
 /* empty css                                 */
-import { e as createComponent, r as renderTemplate, i as renderSlot, j as renderHead, g as addAttribute, h as createAstro, m as maybeRenderHead, k as renderScript, l as renderComponent } from '../chunks/astro/server_D6qeKUdT.mjs';
+import { e as createComponent, r as renderTemplate, m as maybeRenderHead, j as renderScript, g as addAttribute, h as createAstro, i as renderComponent } from '../chunks/astro/server_Dy72Gv6t.mjs';
 import 'kleur/colors';
 import 'html-escaper';
+import { $ as $$Layout } from '../chunks/Layout_Q9zhXNUd.mjs';
 import 'clsx';
+/* empty css                                 */
 export { renderers } from '../renderers.mjs';
-
-var __freeze = Object.freeze;
-var __defProp = Object.defineProperty;
-var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
-var _a;
-const $$Astro$2 = createAstro();
-const $$Layout = createComponent(($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
-  Astro2.self = $$Layout;
-  const { title } = Astro2.props;
-  return renderTemplate(_a || (_a = __template(['<html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/anillo.png"><meta name="generator"', '><script src="https://unpkg.com/scrollreveal"><\/script><title>', "</title>", "</head> <body> ", " </body></html>"])), addAttribute(Astro2.generator, "content"), title, renderHead(), renderSlot($$result, $$slots["default"]));
-}, "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/layouts/Layout.astro", undefined);
 
 const $$Temporizer = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section class="cont-temporizador" data-astro-cid-xcbaaecl> <div class="bloque" data-astro-cid-xcbaaecl> <p id="days" data-astro-cid-xcbaaecl>-</p> <h3 class="font-bold" data-astro-cid-xcbaaecl>Dias</h3> </div> <div class="bloque" data-astro-cid-xcbaaecl> <p id="hours" data-astro-cid-xcbaaecl>-</p> <h3 class="font-bold" data-astro-cid-xcbaaecl>Horas</h3> </div> <div class="bloque" data-astro-cid-xcbaaecl> <p id="minutes" data-astro-cid-xcbaaecl>-</p> <h3 class="font-bold" data-astro-cid-xcbaaecl>Minutos</h3> </div> <div class="bloque" data-astro-cid-xcbaaecl> <p id="seconds" data-astro-cid-xcbaaecl>-</p> <h3 class="font-bold" data-astro-cid-xcbaaecl>Segundos</h3> </div> </section> ${renderScript($$result, "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/components/Temporizer.astro?astro&type=script&index=0&lang.ts")}`;
 }, "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/components/Temporizer.astro", undefined);
 
 const $$Card = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<div class="container p-4 relative z-10 flex justify-center items-center flex-col" data-astro-cid-dohjnao5> <h3 class="inv-regular dressCode text-center font-bold text-4xl" data-astro-cid-dohjnao5>
+  return renderTemplate`${maybeRenderHead()}<div class="container p-4 relative z-10 flex justify-center items-center flex-col" data-astro-cid-dohjnao5> <h3 class="inv-regular dressCode text-center font-bold text-6xl" data-astro-cid-dohjnao5>
 Hola Vanessa
-</h3> </div> `;
+</h3> <h2 class="text-sm" data-astro-cid-dohjnao5>Presiona aquí y sube el volumen...</h2> </div> `;
 }, "C:/Users/ismae/Downloads/pro/invitation-astro-master/src/components/Card.astro", undefined);
 
 const $$Astro$1 = createAstro();
