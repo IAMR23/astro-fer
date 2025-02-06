@@ -1,14 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Temporizer from "../components/Temporizer.astro";
-import Card from "../components/Card.astro";
 import CustomButton from "../components/CustomButton.astro";
-import Pase from "../components/Pase.astro";
 ---
 
 <Layout title="Boda">
-  <Card />
-
   <div class="container flex flex-col justify-center items-center text-center">
     <div class="items-center py-5 romanesco-regular">
       <h3 class="uppercase text-xs">
@@ -84,7 +80,7 @@ import Pase from "../components/Pase.astro";
       <h3 class="text-center">
         Para nosotros es muy importante contar con tu presencia.
       </h3>
-      <h3>Por favor confírmanos hasta el  28 de Febréro</h3>
+      <h3>Por favor confírmanos hasta el  28 de Febrero</h3>
     </div>
 
     <CustomButton
@@ -121,14 +117,19 @@ import Pase from "../components/Pase.astro";
     </div>
   </div>
 
-  <div class="flex flex-col items-center justify-center text-center">
+  <!--   <div class="flex flex-col items-center justify-center text-center">
     <h2 class="text-4xl">Faltan</h2>
     <div class="timer py-5">
       <Temporizer />
     </div>
-  </div>
+  </div> -->
 
-  <Pase numPase="3" />
+  <div class="flex flex-col justify-center items-center text-center">
+    <h3 class="p-4 uppercase font-bold">Pase para 3 personas</h3>
+    <div class="bg-mi-coffe w-full p-3 text-white">
+      <h3>Este pase NO es transferible</h3>
+    </div>
+  </div>
 
   <div class="image-container flex justify-center" style="display: none">
     <!-- Elemento de audio (oculto) -->
