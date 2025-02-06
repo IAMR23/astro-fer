@@ -7,7 +7,9 @@ import { $ as $$CustomButton, a as $$Layout } from '../chunks/Layout_XgIe6JH3.mj
 export { renderers } from '../renderers.mjs';
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Boda", "data-astro-cid-j7pv25f6": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="container flex flex-col justify-center items-center text-center" data-astro-cid-j7pv25f6> <div class="items-center py-5 romanesco-regular" data-astro-cid-j7pv25f6> <h3 class="uppercase text-xs" data-astro-cid-j7pv25f6>
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Boda", "data-astro-cid-j7pv25f6": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="container-2 p-4 relative z-10 flex justify-center items-center flex-col" data-astro-cid-j7pv25f6> <h3 class="inv-regular dressCode text-center font-bold text-6xl" data-astro-cid-j7pv25f6>
+Felicidades !!!
+</h3> <h2 class="text-sm" data-astro-cid-j7pv25f6>Presiona aquí y sube el volumen...</h2> </div> <div class="container flex flex-col justify-center items-center text-center" data-astro-cid-j7pv25f6> <div class="items-center py-5 romanesco-regular" data-astro-cid-j7pv25f6> <h3 class="uppercase text-xs" data-astro-cid-j7pv25f6>
 Los momentos más felices de la vida son aquellos que compartimos con las
         personas que amamos.
 </h3> <h3 class="uppercase text-xs" data-astro-cid-j7pv25f6>

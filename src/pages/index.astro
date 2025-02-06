@@ -5,6 +5,15 @@ import CustomButton from "../components/CustomButton.astro";
 ---
 
 <Layout title="Boda">
+  <div
+    class="container-2 p-4 relative z-10 flex justify-center items-center flex-col"
+  >
+    <h3 class="inv-regular dressCode text-center font-bold text-6xl">
+      Felicidades !!!
+    </h3>
+    <h2 class="text-sm">Presiona aquí y sube el volumen...</h2>
+  </div>
+
   <div class="container flex flex-col justify-center items-center text-center">
     <div class="items-center py-5 romanesco-regular">
       <h3 class="uppercase text-xs">
@@ -158,6 +167,11 @@ import CustomButton from "../components/CustomButton.astro";
     }
     .text-xs {
       font-size: 0.75rem; /* 12 píxeles aproximadamente */
+    }
+    .container-2 {
+      background-color: #b5985c;
+      text-align: center;
+      color: white;
     }
   </style>
 </Layout>
