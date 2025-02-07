@@ -108,7 +108,7 @@ export async function getStaticPaths() {
       props: { nombre: "Hola Jair y Dayana", pases: "2" },
     },
     { params: { id: "607" }, props: { nombre: "Hola Andrea", pases: "1" } },
-    { params: { id: "751" }, props: { nombre: "Hola Rosa", pases: "1" } },
+    { params: { id: "752" }, props: { nombre: "Hola Rosa", pases: "1" } },
     {
       params: { id: "668" },
       props: { nombre: "Hola Mariela y Henry", pases: "2" },
@@ -126,10 +126,6 @@ export async function getStaticPaths() {
       params: { id: "206" },
       props: { nombre: "Hola Jherson y Liseth", pases: "2" },
     },
-    {
-      params: { id: "383" },
-      props: { nombre: "Hola Evelin y Rene", pases: "2" },
-    },
     { params: { id: "783" }, props: { nombre: "Hola Diana", pases: "1" } },
     {
       params: { id: "228" },
@@ -140,76 +136,32 @@ export async function getStaticPaths() {
       props: { nombre: "Hola Jaime y Natalia", pases: "2" },
     },
     { params: { id: "843" }, props: { nombre: "Hola Alex", pases: "1" } },
+
+    {
+      params: { id: "111" },
+      props: { nombre: "Hola Kevin", pases: "2" },
+    },
+
+    /* NEWS */
     {
       params: { id: "751" },
       props: { nombre: "Hola Edison y Esposa", pases: "2" },
     },
     {
-      params: { id: "111" },
-      props: { nombre: "Hola Kevin", pases: "1" },
+      params: { id: "385" },
+      props: { nombre: "Hola Evelin y Rene", pases: "1" },
+    },
+    {
+      params: { id: "1234" },
+      props: { nombre: "Hola Gloria y Gerardo", pases: "2" },
+    },
+    {
+      params: { id: "5678" },
+      props: { nombre: "Hola David", pases: "1" },
     },
   ];
 }
 const { pases, nombre } = Astro.props;
-
-/* export async function getStaticPaths() {
-  const invitados = [
-    { nombre: "Jairo", pases: 2 },
-    { nombre: "Gaby", pases: 1 },
-    { nombre: "Fernando y Familia Itaz", pases: 3 },
-    { nombre: "Adriana y Jhonny", pases: 3 },
-    { nombre: "Genesis y Miguel", pases: 4 },
-    { nombre: "Martha y Familia Castillo", pases: 4 },
-    { nombre: "Jonathan", pases: 1 },
-    { nombre: "Paola y Andrés", pases: 2 },
-    { nombre: "Paola", pases: 1 },
-    { nombre: "Nicolas", pases: 1 },
-    { nombre: "Edison", pases: 1 },
-    { nombre: "Wilmer", pases: 1 },
-    { nombre: "Elvis", pases: 1 },
-    { nombre: "Dayana", pases: 1 },
-    { nombre: "David", pases: 1 },
-    { nombre: "Giovanny y Familia Naranjo", pases: 4 },
-    { nombre: "Fredy", pases: 1 },
-    { nombre: "Luz María y Joseph", pases: 2 },
-    { nombre: "Javier y Ericka", pases: 2 },
-    { nombre: "Jose Luis y Familia", pases: 5 },
-    { nombre: "Danilo y Valentina", pases: 2 },
-    { nombre: "Pablo y Familia Sandoval", pases: 4 },
-    { nombre: "Xavier", pases: 1 },
-    { nombre: "Vanesa", pases: 1 },
-    { nombre: "Washo", pases: 1 },
-    { nombre: "Eduardo", pases: 1 },
-    { nombre: "Tommy y Andrea", pases: 2 },
-    { nombre: "Maria José y Renato", pases: 2 },
-    { nombre: "Cesar y Karina", pases: 2 },
-    { nombre: "Ricardo", pases: 1 },
-    { nombre: "Gaby", pases: 1 },
-    { nombre: "Josselin y Sebastian", pases: 2 },
-    { nombre: "Jimmy y Gabriela", pases: 2 },
-    { nombre: "Miguel y Fernanda", pases: 2 },
-    { nombre: "Eddy y Heilys", pases: 2 },
-    { nombre: "Jair y Dayana", pases: 2 },
-    { nombre: "Andrea", pases: 1 },
-    { nombre: "Rosa", pases: 1 },
-    { nombre: "Mariela y Henry", pases: 2 },
-    { nombre: "Clemencia y Bayardo", pases: 2 },
-    { nombre: "Juan Pablo", pases: 1 },
-    { nombre: "Juan Carlos y Estefy", pases: 2 },
-    { nombre: "Jherson y Liseth", pases: 2 },
-    { nombre: "Evelin y Rene", pases: 2 },
-    { nombre: "Diana", pases: 1 },
-    { nombre: "Jimena y Byron", pases: 2 },
-    { nombre: "Jaime y Natalia", pases: 2 },
-    { nombre: "Alex", pases: 1 },
-    { nombre: "Edison y Esposa", pases: 2 },
-  ];
-
-  return invitados.map((invitado) => ({
-    params: { invitados: invitado.nombre.toLowerCase().replace(/ /g, "-") },
-    props: { pases: invitado.pases },
-  }));
-} */
 ---
 
 <Layout title=`Invitacion ${nombre}`>
