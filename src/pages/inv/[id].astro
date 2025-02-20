@@ -159,6 +159,12 @@ export async function getStaticPaths() {
       params: { id: "5678" },
       props: { nombre: "Hola David", pases: "1" },
     },
+
+    /* 19-02-2025 */
+    {
+      params: { id: "4509" },
+      props: { nombre: "Hola Gerardo y Catalina", pases: "2" },
+    },
   ];
 }
 const { pases, nombre } = Astro.props;
