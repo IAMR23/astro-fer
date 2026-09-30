@@ -1,71 +1,58 @@
 ---
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description = "Acompáñanos a celebrar la boda de Lizbeth y Fernando.",
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/anillo.png" />
-    <meta name="generator" content={Astro.generator} />
-    <script is:inline src="https://unpkg.com/scrollreveal"></script>
-
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4e536f" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Italiana&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>{title}</title>
     <style is:global>
-      @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Great+Vibes&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Romanesco&family=Style+Script&family=Tangerine:wght@400;700&display=swap");
-
-      h3 {
-        font-family: "Bodoni Moda", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
+      :root {
+        --ink: #343642;
+        --navy: #4e536f;
+        --navy-deep: #3f455f;
+        --lilac: #b8abc9;
+        --lilac-soft: #d7cce0;
+        --paper: #f5f0e8;
+        --paper-deep: #ebe4db;
+        --gold: #c8b280;
+        --line: rgba(67, 69, 82, 0.25);
       }
-
-      h2 {
-        font-family: "Great Vibes", serif;
-        font-weight: 400;
-        font-style: normal;
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background: #dedbe3;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
       }
-
-      .inv-regular {
-        font-family: "Tangerine", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      .inv-bold {
-        font-family: "Tangerine", serif;
-        font-weight: 700;
-        font-style: normal;
-      }
-      /* 
-      .boda {
-        font-family: "Style Script", serif;
-        font-weight: 400;
-        font-style: normal;
-      } */
-      .boda {
-        font-family: "Pattaya", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      .romanesco-regular {
-        font-family: "Romanesco", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-    </style></head
-  >
-
-  <body>
-    <slot />
-  </body>
+      a { color: inherit; }
+      button, input, select, textarea { font: inherit; }
+      img { max-width: 100%; }
+      ::selection { color: var(--paper); background: var(--navy); }
+    </style>
+  </head>
+  <body><slot /></body>
 </html>

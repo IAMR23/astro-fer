@@ -180,6 +180,6 @@ export async function getStaticPaths() {
 const { pases, nombre } = Astro.props;
 ---
 
-<Layout title=`Invitacion ${nombre}`>
+<Layout title={`Invitación · ${nombre}`}>
   <CardFinal nombre={nombre} pases={pases} />
 </Layout>
