@@ -7,11 +7,11 @@ const mapUrl = "https://www.google.com/maps/place/Quinta+El+Guabo/@-0.1814147,-7
 const rsvpUrl = "https://moonlit-begonia-f9fbcd.netlify.app/";
 
 const gallery = [
-  { src: "/pexels-begum-bodur-49915278-34274513.jpg", alt: "Ramo de flores blancas" },
-  { src: "/pexels-adeniuso-gomes-2148096772-30679828.jpg", alt: "Las manos de los novios con sus anillos" },
-  { src: "/pexels-dulce-panebra-695494914-38675490.jpg", alt: "Lizbeth y Fernando sonriendo" },
-  { src: "/pexels-dulce-panebra-695494914-38675502.jpg", alt: "Los novios caminando entre árboles" },
-  { src: "/pexels-dulce-panebra-695494914-38675491.jpg", alt: "Fernando cargando a Lizbeth" },
+  { src: "/pexels-begum-bodur-49915278-34274513-640.webp", srcset: "/pexels-begum-bodur-49915278-34274513-640.webp 640w, /pexels-begum-bodur-49915278-34274513-1200.webp 1200w", full: "/pexels-begum-bodur-49915278-34274513.jpg", width: 640, height: 1138, alt: "Ramo de flores blancas" },
+  { src: "/pexels-adeniuso-gomes-2148096772-30679828-640.webp", srcset: "/pexels-adeniuso-gomes-2148096772-30679828-640.webp 640w, /pexels-adeniuso-gomes-2148096772-30679828-1200.webp 1200w", full: "/pexels-adeniuso-gomes-2148096772-30679828.jpg", width: 640, height: 960, alt: "Las manos de los novios con sus anillos" },
+  { src: "/pexels-dulce-panebra-695494914-38675490-640.webp", srcset: "/pexels-dulce-panebra-695494914-38675490-640.webp 640w, /pexels-dulce-panebra-695494914-38675490-1200.webp 1200w", full: "/pexels-dulce-panebra-695494914-38675490.jpg", width: 640, height: 1064, alt: "Lizbeth y Fernando sonriendo" },
+  { src: "/pexels-dulce-panebra-695494914-38675502-640.webp", srcset: "/pexels-dulce-panebra-695494914-38675502-640.webp 640w, /pexels-dulce-panebra-695494914-38675502-1200.webp 1200w", full: "/pexels-dulce-panebra-695494914-38675502.jpg", width: 640, height: 1140, alt: "Lizbeth y Fernando caminando entre árboles" },
+  { src: "/pexels-dulce-panebra-695494914-38675491-640.webp", srcset: "/pexels-dulce-panebra-695494914-38675491-640.webp 640w, /pexels-dulce-panebra-695494914-38675491-1200.webp 1200w", full: "/pexels-dulce-panebra-695494914-38675491.jpg", width: 640, height: 1098, alt: "Fernando cargando a Lizbeth" },
 ];
 ---
 
@@ -38,7 +38,7 @@ const gallery = [
       <p class="place">Quito, Ecuador</p>
     </div>
     <div class="hero-photo-wrap reveal">
-      <div class="hero-photo"><img src="/pexels-dulce-panebra-695494914-38675490.jpg" alt="Lizbeth y Fernando celebrando juntos" width="3612" height="6000" fetchpriority="high" /></div>
+      <div class="hero-photo"><img src="/pexels-dulce-panebra-695494914-38675490-640.webp" srcset="/pexels-dulce-panebra-695494914-38675490-640.webp 640w, /pexels-dulce-panebra-695494914-38675490-1200.webp 1200w" sizes="(max-width: 760px) 88vw, 390px" alt="Lizbeth y Fernando celebrando juntos" width="640" height="1064" fetchpriority="high" decoding="async" /></div>
     </div>
     <span class="moon-mark" aria-hidden="true">☾</span>
     <span class="spark spark-one" aria-hidden="true">✦</span>
@@ -67,9 +67,9 @@ const gallery = [
       <p class="script-line">Y lo mejor está por comenzar.</p>
     </div>
     <div class="story-gallery reveal">
-      <figure class="arch-photo tall"><img src="/pexels-dulce-panebra-695494914-38675502.jpg" alt="Lizbeth y Fernando caminando entre árboles" loading="lazy" /></figure>
-      <figure class="arch-photo short"><img src="/pexels-adeniuso-gomes-2148096772-30679828.jpg" alt="Los anillos de la pareja" loading="lazy" /></figure>
-      <figure class="arch-photo tall"><img src="/pexels-dulce-panebra-695494914-38675491.jpg" alt="Fernando carga a Lizbeth" loading="lazy" /></figure>
+      <figure class="arch-photo tall"><img src="/pexels-dulce-panebra-695494914-38675502-640.webp" srcset="/pexels-dulce-panebra-695494914-38675502-640.webp 640w, /pexels-dulce-panebra-695494914-38675502-1200.webp 1200w" sizes="(max-width: 760px) 33vw, 220px" width="640" height="1140" alt="Lizbeth y Fernando caminando entre árboles" loading="lazy" decoding="async" /></figure>
+      <figure class="arch-photo short"><img src="/pexels-adeniuso-gomes-2148096772-30679828-640.webp" srcset="/pexels-adeniuso-gomes-2148096772-30679828-640.webp 640w, /pexels-adeniuso-gomes-2148096772-30679828-1200.webp 1200w" sizes="(max-width: 760px) 33vw, 220px" width="640" height="960" alt="Los anillos de la pareja" loading="lazy" decoding="async" /></figure>
+      <figure class="arch-photo tall"><img src="/pexels-dulce-panebra-695494914-38675491-640.webp" srcset="/pexels-dulce-panebra-695494914-38675491-640.webp 640w, /pexels-dulce-panebra-695494914-38675491-1200.webp 1200w" sizes="(max-width: 760px) 33vw, 220px" width="640" height="1098" alt="Fernando carga a Lizbeth" loading="lazy" decoding="async" /></figure>
     </div>
   </section>
 
@@ -116,7 +116,7 @@ const gallery = [
     <p class="section-kicker">✦ Algunos de nuestros momentos favoritos ✦</p>
     <div class="photo-strip">
       {gallery.map((photo) => (
-        <a href={photo.src} target="_blank" aria-label={`Abrir fotografía: ${photo.alt}`}><img src={photo.src} alt={photo.alt} loading="lazy" /></a>
+        <a href={photo.full} target="_blank" aria-label={`Abrir fotografía: ${photo.alt}`}><img src={photo.src} srcset={photo.srcset} sizes="(max-width: 760px) 33vw, 185px" width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" decoding="async" /></a>
       ))}
     </div>
     <a class="outline-button" href="#historia">Nuestra historia <span>↑</span></a>
@@ -202,7 +202,7 @@ const gallery = [
   .music-dock { position:fixed; z-index:30; right:24px; bottom:24px; width:min(360px,calc(100vw - 48px)); }
   .celestial { background-color:var(--navy); background-image:radial-gradient(circle at 12% 18%,rgba(255,255,255,.8) 0 1px,transparent 1.8px),radial-gradient(circle at 76% 24%,rgba(255,255,255,.65) 0 1px,transparent 1.7px),linear-gradient(132deg,#626780 0%,#8c86a6 56%,#565c78 100%); background-size:88px 88px,122px 122px,auto; }
   .hero { position:relative; min-height:600px; display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:44px; padding:68px 88px 58px; color:var(--paper); }
-  .hero::after,.rsvp::after,.details::after { content:""; position:absolute; inset:0; opacity:.16; pointer-events:none; background:url("/og.png") center/cover; mix-blend-mode:screen; }
+  .hero::after,.rsvp::after,.details::after { content:""; position:absolute; inset:0; opacity:.16; pointer-events:none; background:url("/og-background.webp") center/cover; mix-blend-mode:screen; }
   .hero-copy,.hero-photo-wrap,.moon-mark,.spark,.rsvp > *,.details > * { position:relative; z-index:2; }
   .hero-copy { text-align:center; }
   .guest-name { display:inline-block; margin:0 0 24px; padding:8px 20px; border:1px solid rgba(245,240,232,.55); border-radius:999px; font-family:"Cormorant Garamond",serif; font-size:1.05rem; font-style:italic; }
