@@ -6,7 +6,7 @@ interface Props {
 
 const {
   title,
-  description = "Acompáñanos a celebrar la boda de Lizbeth y Fernando.",
+  description = "Acompáñanos a celebrar la boda de Kamila y Angelo.",
 } = Astro.props;
 ---
 
@@ -16,7 +16,7 @@ const {
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#4e536f" />
+    <meta name="theme-color" content="#A8B89A" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,15 +28,14 @@ const {
     <title>{title}</title>
     <style is:global>
       :root {
-        --ink: #343642;
-        --navy: #4e536f;
-        --navy-deep: #3f455f;
-        --lilac: #b8abc9;
-        --lilac-soft: #d7cce0;
-        --paper: #f5f0e8;
-        --paper-deep: #ebe4db;
-        --gold: #c8b280;
-        --line: rgba(67, 69, 82, 0.25);
+        --ink: #403b42;
+        --lavender: #b7a7d9;
+        --soft-lilac: #dcc6e6;
+        --ivory: #f7f5f0;
+        --sage: #a8b89a;
+        --sage-deep: #829377;
+        --mauve: #aa829d;
+        --line: rgba(73, 65, 76, 0.2);
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
@@ -44,14 +43,14 @@ const {
         margin: 0;
         min-width: 320px;
         color: var(--ink);
-        background: #dedbe3;
+        background: #e4e0e6;
         font-family: "Montserrat", sans-serif;
         font-weight: 300;
       }
       a { color: inherit; }
       button, input, select, textarea { font: inherit; }
       img { max-width: 100%; }
-      ::selection { color: var(--paper); background: var(--navy); }
+      ::selection { color: var(--ivory); background: var(--sage-deep); }
     </style>
   </head>
   <body><slot /></body>
